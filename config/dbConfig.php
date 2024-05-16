@@ -1,5 +1,5 @@
 <?php
-$hn = '%';
+$hn = 'localhost';
 $un = 'fastburger_admin';
 $pw = 'D.P1a1QZU32aHPva';
 $db = 'fastburger';
@@ -10,5 +10,5 @@ if (!$conn){
 }
 else
 {
-    echo("Connection is successful")
+    echo("Connection is successful");
 }
