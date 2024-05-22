@@ -1,6 +1,7 @@
 <?php
  define('BASE_PATH', 'http://localhost:8888/fastburgers/');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,4 +12,4 @@
 
    <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex flex-col min-h-screen">
+<body>

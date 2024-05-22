@@ -19,5 +19,7 @@ RewriteEngine On
 # General rewrite
 RewriteRule ^Index$ pages/Index.php [L]
 RewriteRule ^Customers$ pages/Customers.php [L]
+RewriteRule ^Orders$ pages/Orders.php [L]
+RewriteRule ^OrderDetails$ pages/OrderDetails.php [L]
 RewriteRule ^Inventory$ pages/Inventory.php [L]
 

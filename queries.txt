@@ -5,6 +5,9 @@ FROM Orders
 GROUP BY fk_staff_id
 ORDER BY order_count DESC;
 
+COMPLETE ^^^^
+
+
 
 What are the most popular orders.
 
