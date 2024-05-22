@@ -1,0 +1,35 @@
+/* General container styles */
+.custcontainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+/* Styles for the main content area */
+.customers-content {
+    flex-grow: 1;
+    display: flex;
+    gap: 16px;
+    height: 100%;
+}
+
+/* Shared box styles */
+.custbox {
+    flex: 1;
+    background: white;
+    padding: 48px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.customers-box h2, .order-details-box h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}

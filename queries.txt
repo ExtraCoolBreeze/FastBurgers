@@ -1,0 +1,93 @@
+Which staff member takes the most orders.
+
+SELECT fk_staff_id, COUNT(*) AS order_count
+FROM Orders
+GROUP BY fk_staff_id
+ORDER BY order_count DESC;
+
+
+What are the most popular orders.
+
+SELECT oi.fk_item_id, i.item_name,
+ SUM(oi.quantity) AS total_ordered
+FROM Order_Items oi
+JOIN item i ON oi.fk_item_id = i.item_id
+GROUP BY oi.fk_item_id, i.item_name ORDER BY total_ordered DESC;
+
+
+
+Check if a customer paid by cash or card.
+
+SELECT 
+    Orders.order_id,
+    Customer.customer_name,
+    Payment.payment_type
+FROM Orders
+JOIN Payment ON Orders.fk_payment_id = Payment.payment_id
+JOIN Customer ON Orders.fk_customer_id = Customer.customer_id
+WHERE Customer.customer_id =  (customer_id); 
+
+
+A query that finds what customer placed what order
+
+SELECT SELECT 
+    c.customer_name,
+    o.order_id,
+    o.order_date,
+    o.order_time
+FROM 
+    Orders o
+INNER JOIN 
+    Customer c ON o.fk_customer_id = c.customer_id;
+
+
+
+
+Query that finds what items are on which order
+
+SELECT 
+    o.order_id,
+    i.item_name,
+    oi.quantity,
+    o.order_date,
+    o.order_time
+FROM 
+    Orders o
+INNER JOIN 
+    Order_Items oi ON o.order_id = oi.fk_order_id
+INNER JOIN 
+    item i ON oi.fk_item_id = i.item_id;
+
+
+
+To check if a customer paid by cash.
+
+SELECT 
+    c.customer_name,
+    p.payment_type,
+    o.order_id,
+    o.order_date,
+    o.order_time
+FROM 
+    Orders o
+INNER JOIN 
+    Payment p ON o.fk_payment_id = p.payment_id
+INNER JOIN 
+    Customer c ON o.fk_customer_id = c.customer_id;
+
+
+
+Query to find which member of staff that took what order.
+
+SELECT 
+    s.staff_firstname,
+    s.staff_surname,
+    o.order_id,
+    o.order_date,
+    o.order_time
+FROM 
+    Orders o
+INNER JOIN 
+    Staff s ON o.fk_staff_id = s.staff_id;
+
+

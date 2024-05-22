@@ -17,6 +17,7 @@ RewriteEngine On
 #  potentially match a URL, but you only want one of them to be applied.
 
 # General rewrite
-RewriteRule ^/$ index.php [L]
-RewriteRule ^login$ pages/login.php [L]
+RewriteRule ^Index$ pages/Index.php [L]
+RewriteRule ^Customers$ pages/Customers.php [L]
+RewriteRule ^Inventory$ pages/Inventory.php [L]
 
