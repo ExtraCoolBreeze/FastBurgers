@@ -42,43 +42,44 @@
 ?>
 
 <!-- Main content section -->
-<div class="container flex-grow mx-auto px-2 md:px-6 py-8">
+<div class="ordercontainer flex-grow mx-auto px-2 md:px-6 py-8" style="background-color: #FFFFFF;">
     <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
         
         <!-- Search box in the top-left row -->
         <div class="search-box md:col-span-1">
             <form action="search_results.php" method="get" class="flex">
-                <input type="text" name="query" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-600"/>
-                <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Search</button>
+                <input type="text" name="query" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-red-600"/>
+                <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded-r-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600">Search</button>
+
             </form>
         </div>
 
-        <div class="order-list md:col-span-1 bg-white p-12 rounded-lg shadow-lg h-full row-span-2">
-            <h2 class="text-4xl font-bold mb-4">Orders List</h2>
+        <div class="overflow md:col-span-1 bg-white p-12 rounded-lg shadow-lg h-full row-span-2" style="background-color: #f8d574; border-color: #592E15;">
+            <h2 class=".montsheading text-4xl font-bold mb-4" style="color: #F28F38;">Orders List</h2>
             <table class="min-w-full bg-white">
                 <thead>
                     <tr>
-                        <th class="py-2">Order ID</th>
-                        <th class="py-2">Order Date</th>
-                        <th class="py-2">Order Time</th>
-                        <th class="py-2">Customer ID</th>
-                        <th class="py-2">Customer Name</th>
-                        <th class="py-2">Staff Name</th>
-                        <th class="py-2">Payment Type</th>
-                        <th class="py-2">Details</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Order ID</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Order Date</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Order Time</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Customer ID</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Customer Name</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Staff Name</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Payment Type</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Details</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($orders as $order): ?>
-                        <tr>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['order_id']) ?></td>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['order_date']) ?></td>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['order_time']) ?></td>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['customer_id']) ?></td>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['customer_name']) ?></td>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['staff_name']) ?></td>
-                            <td class="border px-4 py-2"><?= htmlspecialchars($order['payment_type']) ?></td>
-                            <td class="border px-4 py-2"><a href="OrderDetails?order_id=<?= htmlspecialchars($order['order_id']) ?>" class="text-blue-600 hover:text-blue-800">View Details</a></td>
+                        <tr style="border-color: #592E15;">
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['order_id']) ?></td>
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['order_date']) ?></td>
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['order_time']) ?></td>
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['customer_id']) ?></td>
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['customer_name']) ?></td>
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['staff_name']) ?></td>
+                            <td class="border px-4 py-2" style="color: #0D0D0D;"><?= htmlspecialchars($order['payment_type']) ?></td>
+                            <td class="border px-4 py-2"><a href="OrderDetails?order_id=<?= htmlspecialchars($order['order_id']) ?>" class="text-red-600 hover:text-red-700">View Details</a></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

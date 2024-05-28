@@ -56,21 +56,21 @@
 
 <!-- Main content section -->
 <div class="container flex-grow mx-auto px-2 md:px-6 py-8">
-    <div class="bg-white p-12 rounded-lg shadow-lg h-full">
-        <h2 class="text-4xl font-bold mb-4">Order Details</h2>
+    <div class="overflow bg-white p-10 rounded-lg shadow-lg h-full" style="background-color: #f8d574;">
+        <h2 class=".montsheading text-4xl font-bold mb-4" style="color: #F28F38;">Order Details</h2>
         <?php if (!empty($orderDetails)): ?>
             <table class="min-w-full bg-white">
                 <thead>
                     <tr>
-                        <th class="py-2">Order ID</th>
-                        <th class="py-2">Order Date</th>
-                        <th class="py-2">Order Time</th>
-                        <th class="py-2">Customer ID</th>
-                        <th class="py-2">Customer Name</th>
-                        <th class="py-2">Staff Name</th>
-                        <th class="py-2">Payment Type</th>
-                        <th class="py-2">Item Name</th>
-                        <th class="py-2">Quantity</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Order ID</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Order Date</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Order Time</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Customer ID</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Customer Name</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Staff Name</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Payment Type</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Item Name</th>
+                        <th class=".montsheading py-2" style="color: #F28F38;">Quantity</th>
                     </tr>
                 </thead>
                 <tbody>

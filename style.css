@@ -1,4 +1,3 @@
-/* General container styles */
 .custcontainer {
     display: flex;
     flex-direction: column;
@@ -6,14 +5,12 @@
     width: 100%;
     padding: 32px;
     box-sizing: border-box;
+    flex-direction: column;
 }
 
 /* Styles for the main content area */
 .customers-content {
     flex-grow: 1;
-    display: flex;
-    gap: 16px;
-    height: 100%;
 }
 
 /* Shared box styles */
@@ -32,4 +29,33 @@
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 16px;
+}
+
+.montsheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.montsnormal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.text-brown-custom {
+    color: #592E15;
+}
+
+.hover\:text-white:hover {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+    .overflow{ overflow-y: scroll;}
+}
+@media screen and (max-width: 800px) {
+    .customers-content { flex-direction: column}
+}
+
+@media screen and (max-width: 800px) {
+    .index-right { flex-direction: column}
 }
