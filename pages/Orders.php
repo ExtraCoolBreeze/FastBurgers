@@ -41,11 +41,9 @@
     }
 ?>
 
-<!-- Main content section -->
 <div class="ordercontainer flex-grow mx-auto px-2 md:px-6 py-8" style="background-color: #FFFFFF;">
     <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
         
-        <!-- Search box in the top-left row -->
         <div class="search-box md:col-span-1">
             <form action="search_results.php" method="get" class="flex">
                 <input type="text" name="query" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-red-600"/>
@@ -54,6 +52,7 @@
             </form>
         </div>
 
+        <!-- List of orders div -->
         <div class="overflow md:col-span-1 bg-white p-12 rounded-lg shadow-lg h-full row-span-2" style="background-color: #f8d574; border-color: #592E15;">
             <h2 class=".montsheading text-4xl font-bold mb-4" style="color: #F28F38;">Orders List</h2>
             <table class="min-w-full bg-white">

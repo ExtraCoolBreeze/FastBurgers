@@ -31,7 +31,6 @@
     }
 ?>
 
-<!-- Main content section -->
 <div class="container flex-grow mx-auto px-2 md:px-6 py-8" style="background-color: #FFFFFF;">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
@@ -42,7 +41,8 @@
                 <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded-r-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600">Search</button>
             </form>
         </div>
-
+        
+        <!-- Stock div -->
         <div class="stock-list md:col-span-2 bg-white p-12 rounded-lg shadow-lg h-full row-span-2" style="background-color: #f8d574; border-color: #592E15;">
             <h2 class=".montsheading text-4xl font-bold mb-4" style="color: #F28F38;">Stock list</h2>
             <table class="min-w-full bg-white">
@@ -69,7 +69,7 @@
             </table>
         </div>
 
-        <!-- Right-hand side boxes -->
+        <!-- Right div -->
         <div class="space-y-8">
             
             <div class="regular-items bg-white p-12 rounded-lg shadow-lg h-64" style="background-color: #f8d574; border-color: #592E15;">

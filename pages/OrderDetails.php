@@ -54,7 +54,7 @@
     }
 ?>
 
-<!-- Main content section -->
+<!-- order details div -->
 <div class="container flex-grow mx-auto px-2 md:px-6 py-8">
     <div class="overflow bg-white p-10 rounded-lg shadow-lg h-full" style="background-color: #f8d574;">
         <h2 class=".montsheading text-4xl font-bold mb-4" style="color: #F28F38;">Order Details</h2>

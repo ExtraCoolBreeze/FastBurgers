@@ -9,11 +9,10 @@ $shiftQuery->execute();
 $shiftQuery->bind_result($firstname, $surname, $shift);
 ?>
 
-<!-- Main content section -->
 <div class="container flex-grow mx-auto px-2 md:px-6 py-8" style="background-color: #FFFFFF;">
     <div class="grid grid-rows-1 md:grid-cols-3 gap-6">
 
-        <!-- Weekly Shift pattern box-->
+        <!-- Weekly shift pattern div-->
         <div class="col-span-2 row-start-1 shift-list bg-white p-12 rounded-lg shadow-lg h-128" style="background-color: #f8d574; border-color: #592E15;">
             <h2 class="montsheading text-4xl font-bold mb-4" style="color: #F28F38;">Weekly Shift pattern</h2>
             <table class="min-w-full bg-white">
@@ -36,11 +35,11 @@ $shiftQuery->bind_result($firstname, $surname, $shift);
             </table>
         </div>
 
-        <!-- Right-hand side boxes in the third column -->
+        <!-- Right side divs -->
         <div class="col-start-3 col-span-1 space-y-8">
-            <div class= "index-right">
-                <!-- Staff member box -->
-                <div class="most-orders bg-white p-12 rounded-lg shadow-lg h-64" style="background-color: #f8d574; border-color: #592E15;">
+            <div class="index-right flex flex-wrap">  
+                <!-- Staff div -->
+                <div class="most-orders bg-white p-12 rounded-lg shadow-lg h-64 mb-4" style="background-color: #f8d574; border-color: #592E15;">
                     <h2 class="montsheading text-1xl font-bold mb-1" style="color: #F28F38;">Staff member with the most orders</h2>
                     <p style="color: #0D0D0D;">
                         <?php
@@ -60,7 +59,7 @@ $shiftQuery->bind_result($firstname, $surname, $shift);
                     </p>
                 </div>
 
-                <!-- Stock updates and promotions box -->
+                <!-- Stock div -->
                 <div class="seasonal-promo bg-white p-12 rounded-lg shadow-lg h-64" style="background-color: #f8d574; border-color: #592E15;">
                     <h2 class="montsheading text-1xl font-bold mb-1" style="color: #F28F38;">Seasonal stock updates and promotions</h2>
                     <p style="color: #0D0D0D;">Information about seasonal stock and promotions</p>

@@ -1,6 +1,17 @@
+@media screen and (max-width: 800px) {
+
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .index-right, .customers-content {
+        flex-direction: column;
+    }
+}
+
+
 .custcontainer {
     display: flex;
-    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     padding: 32px;
@@ -8,12 +19,10 @@
     flex-direction: column;
 }
 
-/* Styles for the main content area */
 .customers-content {
     flex-grow: 1;
 }
 
-/* Shared box styles */
 .custbox {
     flex: 1;
     background: white;
@@ -51,11 +60,4 @@
 
 @media screen and (max-width: 800px) {
     .overflow{ overflow-y: scroll;}
-}
-@media screen and (max-width: 800px) {
-    .customers-content { flex-direction: column}
-}
-
-@media screen and (max-width: 800px) {
-    .index-right { flex-direction: column}
 }
